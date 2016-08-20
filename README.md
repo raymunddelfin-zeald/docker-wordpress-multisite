@@ -4,7 +4,7 @@ A Dockerised WordPress Multisite Install. **This is a subdirectory install only.
 
 ## How to use this image
 
-```docker run --name wordpress-ms --link some-mysql:mysql -d dylanrhysscott/wordpress-multisite```
+```docker run --name wordpress-ms --link some-mysql:mysql -d dylanrhysscott/wordpress-multisite-docker```
 
 The following environment variables can also be set
 
@@ -18,7 +18,7 @@ The following environment variables can also be set
 
 ```
 wordpress:
-  image: dylanrhysscott/wordpress-multisite
+  image: dylanrhysscott/wordpress-multisite-docker
   ports: ["80:80"]
   links: ["mysql:mysql"]
 mysql:
